@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="styleContacts.css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="script/core.js"></script>
+
+
 </head>
 <body class="landing-get-started viewport-normal">>
 
@@ -32,31 +36,166 @@
 
 <section style="display: block;" class="section-get-in-touch container-toggle" id="get-in-touch">
     <div class="row">
-<form method="post">
+<form  method="post">
     <input name="csrfmiddlewaretoken" value="72BU7vroBG1K0fXu5xfceR2IuBawnPzl" type="hidden">
     <fieldset>
             <ul class="layout">
             <li class="half">
-                <input name="name" required="required" placeholder="What's your mom call you?" type="text">
+                <input name="vname" required="required" placeholder="What's your mom call you?" type="text">
 
             </li>
             <li class="half">
-                <input name="email" required="required" placeholder="Where can we email you?" type="email">
+                <input name="vemail" required="required" placeholder="Where can we email you?" type="email">
 
             </li>
             <li class="full">
 
-                <textarea name="message" rows="10" required="required" placeholder="What's on your mind?"></textarea>
+                <textarea name="msg" rows="10" required="required" placeholder="What's on your mind?"></textarea>
             </li>
         </ul>
     </fieldset>
     <input name="formtype" value="contact" type="hidden">
     <p class="success">Your message has been delivered. <br>We'll get back to you in a jiff.</p>
-    <button type="submit" class="submit"><span>Send It</span></button>
+    <button type="submit" name="submit" class="submit"><span>Send It</span></button>
 </form>
-
     </div>
 </section>
+
+    <section class="section section--grey text-center">
+        <div class="wrapper">
+            <header>
+                <h1 class="zeta uppercase heading-font seperator-bottom"><b>ИМАТА ВЪПРОС? ОБАДЕТЕ НИ СЕ</b></h1>
+                <h2 class="gamma heading-font"> <a href="tel://01794340979">  Севлиево:<b> 0898 553 225  ;   0675 3 48 70</b></a></h2>
+                <h2 class="gamma heading-font"> <a href="tel://01794340979"> София: <b>0898 333 019</b></a></h2>
+            </header>
+            <a href="mailto:blaiv@abv.bg" class="btn btn--black" style="margin-top:30px;">blaiv@abv.bg</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="contact-address">
+        <div class="grid__item contact-details text-center">
+					<span>
+						<header>
+                            <h1 class="zeta uppercase heading-font seperator-bottom">БЛАЙВ ОФИС И МАГАЗИН</h1>
+                        </header>
+						<p>
+                            <b>Севлиео</b><br>
+                           ул. "Марин Попов" №51<br>
+                           гр.Севлиево, обл. Габрово<br>
+                            пощ.код : 5400</p>
+						<a style="margin-top:30px;" href="https://www.google.co.uk/maps/dir//Blayv+I+Sinove,+%D1%83%D0%BB.+%D0%9C%D0%B0%D0%BB%D0%B8%D0%BD+%D0%9F%D0%BE%D0%BF%D0%BE%D0%B2+51,+5400+%D0%A1%D0%B5%D0%B2%D0%BB%D0%B8%D0%B5%D0%B2%D0%BE,+Bulgaria/@43.0140016,25.1045185,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x40a96bc8ed395247:0x141e07cd3fde5c6b!2m2!1d25.102225!2d43.013743" class="btn">Get Directions</a>
+					</span>
+        </div>
+        <div class="grid__item map-container">
+        <div style="position: relative; background-color: rgb(229, 227, 223); overflow: hidden;" id="fhokehq">
+            <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:800px;width:730px;"><div id="gmap_canvas" style="height:800px;width:730px;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.map-embed.com" id="get-map-data">map-embed.com</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(43.013801789622484,25.10214672949985),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.013801789622484, 25.10214672949985)});infowindow = new google.maps.InfoWindow({content:"<b>ET Blaiv</b><br/>51 Marin Popov<br/>5400 Sevlievo" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});}google.maps.event.addDomListener(window, 'load', init_map);</script>
+    </div>
+        </div>
+    </section>
+
+    <section class="contact-address">
+        <div class="grid__item contact-details text-center">
+					<span>
+						<header>
+                            <h1 class="zeta uppercase heading-font seperator-bottom"> МАГАЗИНИ</h1>
+                        </header>
+						<p>
+                            <b>София</b><br>
+
+                            ул. "Иван Асен ІІ" №9 (до Орлов мост)<br>
+
+                            ул. “Алабин” №4 (Площад македония)<br>
+
+                            ул. “Цар Симеон” №102 (до женския пазар)<br>
+                                <br>
+                        </p>
+						<a style="margin-top:30px;" href="https://www.google.co.uk/maps/dir//Blayv+I+Sinove,+%D1%83%D0%BB.+%D0%9C%D0%B0%D0%BB%D0%B8%D0%BD+%D0%9F%D0%BE%D0%BF%D0%BE%D0%B2+51,+5400+%D0%A1%D0%B5%D0%B2%D0%BB%D0%B8%D0%B5%D0%B2%D0%BE,+Bulgaria/@43.0140016,25.1045185,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x40a96bc8ed395247:0x141e07cd3fde5c6b!2m2!1d25.102225!2d43.013743" class="btn">Get Directions</a>
+					</span>
+        </div>
+        <div class="grid__item map-container2">
+            <div style="position: relative; background-color: rgb(229, 227, 223); overflow: hidden;" id="mapContainer2">
+
+            </div>
+        </div>
+    </section>
+
+
+    <script type="text/javascript">jQuery(function($) {
+        // Asynchronously Load the map API
+        var script = document.createElement('script');
+        script.src = "http://maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
+        document.body.appendChild(script);
+    });
+
+    function initialize() {
+        var map;
+        var bounds = new google.maps.LatLngBounds();
+        var mapOptions = {
+            mapTypeId: 'roadmap',
+            scrollwheel: false
+        };
+
+        // Display a map on the page
+        map = new google.maps.Map(document.getElementById("mapContainer2"), mapOptions);
+        map.setTilt(45);
+
+        // Multiple Markers
+        var markers = [
+            ['London Eye, London', 51.503454,-0.119562],
+            ['Palace of Westminster, London', 51.499633,-0.124755]
+        ];
+
+        // Info Window Content
+        var infoWindowContent = [
+            ['<div class="info_content">' +
+            '<h3>London Eye</h3>' +
+            '<p>The London Eye is a giant Ferris wheel situated on the banks of the River Thames. The entire structure is 135 metres (443 ft) tall and the wheel has a diameter of 120 metres (394 ft).</p>' +        '</div>'],
+            ['<div class="info_content">' +
+            '<h3>Palace of Westminster</h3>' +
+            '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
+            '</div>']
+        ];
+
+        // Display multiple markers on a map
+        var infoWindow = new google.maps.InfoWindow(), marker, i;
+
+        // Loop through our array of markers & place each one on the map
+        for( i = 0; i < markers.length; i++ ) {
+            var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+            bounds.extend(position);
+            marker = new google.maps.Marker({
+                position: position,
+                map: map,
+                title: markers[i][0]
+            });
+
+            // Allow each marker to have an info window
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    infoWindow.setContent(infoWindowContent[i][0]);
+                    infoWindow.open(map, marker);
+                }
+            })(marker, i));
+
+            // Automatically center the map fitting all markers on the screen
+            map.fitBounds(bounds);
+        }
+
+        // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
+        var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+            this.setZoom(14);
+            google.maps.event.removeListener(boundsListener);
+        });
+
+    }</script>
 </main>
 </body>
 </html>
