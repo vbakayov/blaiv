@@ -48,9 +48,50 @@ $(document).ready(function() {
 
         return false;
     });
+    //Scroll down to position
+    $('a').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 500);
+        return false;
+    });
+
+    $(document).ready(function(){
+        $("#start-project").click(function(){
+
+                var e = document.getElementById("myAnchor");
+                if(e.style.display == 'block')
+                    e.style.display = 'none';
+                else
+                    e.style.display = 'block';
+            })
+    });
 
 
 });
+
+var previousScroll = 0,
+    headerOrgOffset = $('.navbar').height();
+
+$('.navbar').height($('.navbar').height());
+
+$(window).scroll(function () {
+    var currentScroll = $(this).scrollTop();
+    if ($(this).scrollTop() > 400) {
+        if (currentScroll > headerOrgOffset) {
+            if (currentScroll > previousScroll) {
+                $('.navbar').slideUp(500);
+            } else {
+                $('.navbar').slideDown(500);
+            }
+        } else {
+            $('.navbar').slideDown(500);
+        }
+        previousScroll = currentScroll;
+    }
+});
+
+
 
 
 

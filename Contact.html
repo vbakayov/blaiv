@@ -24,8 +24,8 @@
         <h1>You need great interactive. <span class="large">We work with brilliant clients.</span></h1>
         <nav class="toggle-links">
 
-           <a href="#start-project" class="start-project">Shops</a>
-            <a href="#get-in-touch" class="get-in-touch active">Contact us </a>
+           <a  href="#myAnchor" rel="" id="anchor1"  class="start-project anchorLink">Shops</a>
+            <a href="#myAnchor2" class="get-in-touch active">Contact us </a>
         </nav>
     </div>
 </header>
@@ -62,7 +62,7 @@
 </section>
 
     <section class="section section--grey text-center">
-        <div class="wrapper">
+        <div name="myAnchor2" id="myAnchor2" class="wrapper">
             <header>
                 <h1 class="zeta uppercase heading-font seperator-bottom"><b>ИМАТА ВЪПРОС? ОБАДЕТЕ НИ СЕ</b></h1>
                 <h2 class="gamma heading-font"> <a href="tel://01794340979">  Севлиево:<b> 0898 553 225  ;   0675 3 48 70</b></a></h2>
@@ -79,9 +79,9 @@
 
 
 
+    <section  class="contact-address">
 
-    <section class="contact-address">
-        <div class="grid__item contact-details text-center">
+        <div name="myAnchor" id="myAnchor" class="grid__item contact-details text-center">
 					<span>
 						<header>
                             <h1 class="zeta uppercase heading-font seperator-bottom">БЛАЙВ ОФИС И МАГАЗИН</h1>
@@ -95,8 +95,8 @@
 					</span>
         </div>
         <div class="grid__item map-container">
-        <div style="position: relative; background-color: rgb(229, 227, 223); overflow: hidden;" id="fhokehq">
-            <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:800px;width:730px;"><div id="gmap_canvas" style="height:800px;width:730px;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.map-embed.com" id="get-map-data">map-embed.com</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(43.013801789622484,25.10214672949985),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.013801789622484, 25.10214672949985)});infowindow = new google.maps.InfoWindow({content:"<b>ET Blaiv</b><br/>51 Marin Popov<br/>5400 Sevlievo" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        <div style="position: relative; background-color: rgb(229, 227, 223); overflow: hidden;" id="mapContainer">
+           <!-- Empty div  the map container  is filled by JavaScipt function at the end- may move to core.js latter -->
     </div>
         </div>
     </section>
@@ -114,15 +114,14 @@
 
                             ул. “Алабин” №4 (Площад македония)<br>
 
-                            ул. “Цар Симеон” №102 (до женския пазар)<br>
-                                <br>
+                            бул. „Стефан Стамболов“(Женски пазар)<br>
                         </p>
 						<a style="margin-top:30px;" href="https://www.google.co.uk/maps/dir//Blayv+I+Sinove,+%D1%83%D0%BB.+%D0%9C%D0%B0%D0%BB%D0%B8%D0%BD+%D0%9F%D0%BE%D0%BF%D0%BE%D0%B2+51,+5400+%D0%A1%D0%B5%D0%B2%D0%BB%D0%B8%D0%B5%D0%B2%D0%BE,+Bulgaria/@43.0140016,25.1045185,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x40a96bc8ed395247:0x141e07cd3fde5c6b!2m2!1d25.102225!2d43.013743" class="btn">Get Directions</a>
 					</span>
         </div>
         <div class="grid__item map-container2">
             <div style="position: relative; background-color: rgb(229, 227, 223); overflow: hidden;" id="mapContainer2">
-
+                <!-- Empty div  the map container  is filled by JavaScipt function at the end- may move to core.js latter -->
             </div>
         </div>
     </section>
@@ -136,8 +135,9 @@
     });
 
     function initialize() {
-        var map;
+        var map,mapSevlievo;
         var bounds = new google.maps.LatLngBounds();
+        var boundsSevlievo =  new google.maps.LatLngBounds();
         var mapOptions = {
             mapTypeId: 'roadmap',
             scrollwheel: false
@@ -147,34 +147,53 @@
         map = new google.maps.Map(document.getElementById("mapContainer2"), mapOptions);
         map.setTilt(45);
 
+        mapSevlievo = new google.maps.Map(document.getElementById("mapContainer"), mapOptions);
+
         // Multiple Markers
         var markers = [
-            ['London Eye, London', 51.503454,-0.119562],
-            ['Palace of Westminster, London', 51.499633,-0.124755]
+            ['ул. “Алабин” №4', 42.694368,23.3156744],
+            ['ул. "Иван Асен ІІ" №9, София', 42.6903097,23.3403594],
+            ['булевард „Стефан Стамболов“', 42.701917, 23.319382]
+        ];
+
+        var markersSevlievo = [
+            ['ул. Малин Попов 51', 43.013743,25.102225]
+
         ];
 
         // Info Window Content
         var infoWindowContent = [
             ['<div class="info_content">' +
-            '<h3>London Eye</h3>' +
-            '<p>The London Eye is a giant Ferris wheel situated on the banks of the River Thames. The entire structure is 135 metres (443 ft) tall and the wheel has a diameter of 120 metres (394 ft).</p>' +        '</div>'],
+            '<h3>ул. “Алабин” №4</h3>' +
+            '<p>Блайв <br>ul. "Alabin I. Vl." 4<br>1000 Sofia<br>Open  10:00 am – 7:00 pm</p>' +        '</div>'],
             ['<div class="info_content">' +
-            '<h3>Palace of Westminster</h3>' +
-            '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
+            '<h3>ул. "Иван Асен ІІ" №9</h3>' +
+            '<p>Блайв <br>ul. "Tsar Ivan Asen II" 9 <br>1124 Sofia<br>Open  <br>10:00 am – 7:00 pm</p>' +     '</div>'],
+            ['<div class="info_content">' +
+            '<h3>бул. „Стефан Стамболов“</h3>' +
+            '<p>Блайв <br>бул. „Стефан Стамболов“ <br>1202 София<br>Open  <br>10:00 am – 7:00 pm</p>' +
             '</div>']
+        ];
+
+        var infoWindowContentSevlievo= [
+
+            ['<div class="info_content">' +
+             '<h3>Blayv I Sinove</h3>' +
+            '<p>Блайв <br>ул. Малин Попов 51<br> 5400 Севлиево</p>' +        '</div>']
         ];
 
         // Display multiple markers on a map
         var infoWindow = new google.maps.InfoWindow(), marker, i;
 
-        // Loop through our array of markers & place each one on the map
+        // Loop through our array of markers & place each one on the map- Sofia
         for( i = 0; i < markers.length; i++ ) {
             var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
             bounds.extend(position);
             marker = new google.maps.Marker({
                 position: position,
                 map: map,
-                title: markers[i][0]
+                title: markers[i][0],
+                icon: 'img/map-marker-icon.png'
             });
 
             // Allow each marker to have an info window
@@ -189,11 +208,45 @@
             map.fitBounds(bounds);
         }
 
+        //Loop through our array -Sevlievo
+        // Display multiple markers on a map
+        var infoWindowSevlievo = new google.maps.InfoWindow(), markerSevlievo, z;
+
+        // Loop through our array of markers & place each one on the map
+        for( z = 0; z < markersSevlievo.length; z++ ) {
+            var positionSevlievo = new google.maps.LatLng(markersSevlievo[z][1], markersSevlievo[z][2]);
+            boundsSevlievo.extend(positionSevlievo);
+            markerSevlievo = new google.maps.Marker({
+                position: positionSevlievo,
+                map: mapSevlievo,
+                title: markersSevlievo[z][0],
+                icon: 'img/map-marker-icon.png'
+            });
+            // Allow each marker to have an info window
+            google.maps.event.addListener(markerSevlievo, 'click', (function (markerSevlievo, z) {
+                return function () {
+                    infoWindowSevlievo.setContent(infoWindowContentSevlievo[z][0]);
+                    infoWindowSevlievo.open(mapSevlievo, markerSevlievo);
+                }
+            })(markerSevlievo, z));
+
+            // Automatically center the map fitting all markers on the screen
+            mapSevlievo.fitBounds(boundsSevlievo);
+        }
+
+
         // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
         var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
             this.setZoom(14);
             google.maps.event.removeListener(boundsListener);
         });
+
+        // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
+        var boundsListener2 = google.maps.event.addListener((mapSevlievo), 'bounds_changed', function(event) {
+            this.setZoom(14);
+            google.maps.event.removeListener(boundsListener2);
+        });
+
 
     }</script>
 </main>

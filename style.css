@@ -5,18 +5,12 @@ body {
 
 
 }
-header{
-    height: 100px;
-    background: #dbdbdb;
-    width: 100%;
-    z-index: 10;
-    position: fixed;
-}
+
 
 #content{
     width: 100%;
     position: relative;
-    top: 50px;
+    top: 80px;
     background: #FFFFFF;
     height: 1500px;
 }
@@ -36,7 +30,7 @@ header{
 .navbar-harvest .container-fluid .navbar-header .navbar-brand{
     color: #fff;
     text-shadow: none;
-    padding-top: 20px;
+    padding-top: 2.2rem;
     padding-bottom: 20px;
     font-weight: bold;
     font-size: 200%;
@@ -126,5 +120,43 @@ header{
 .visible{
     opacity:1;
 }
+
+
+
+.navbar-harvest .navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 50px;
+    font-size:      1.5em;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+        line-height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;}
+}
+
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+#header-wrap {
+    width: 100%;
+    position: fixed;
+    background-color: #e0e0e0;
+}
+
+#header {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 
 
