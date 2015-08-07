@@ -70,14 +70,30 @@ $(document).ready(function() {
 
 });
 
-var previousScroll = 0,
+
+//control the navbar fadein/out initial nav
+var previousScroll = 0,lastKnownScrollY=0 ,
     headerOrgOffset = $('.navbar').height();
+var tolerance = 200;
 
 $('.navbar').height($('.navbar').height());
 
 $(window).scroll(function () {
     var currentScroll = $(this).scrollTop();
-    if ($(this).scrollTop() > 400) {
+    console.log('this is currentScroll'+ currentScroll);
+    console.log('this is previous scrol'+ previousScroll);
+    if($(this).scrollTop()==0) {
+        $('.navbar').removeClass("navbar-harvest");
+    }
+
+    if($(this).scrollTop()>1){
+            $('.navbar').addClass("navbar-harvest");
+        }
+
+
+
+
+    if ($(this).scrollTop() > 600) {
         if (currentScroll > headerOrgOffset) {
             if (currentScroll > previousScroll) {
                 $('.navbar').slideUp(500);
@@ -89,6 +105,19 @@ $(window).scroll(function () {
         }
         previousScroll = currentScroll;
     }
+
+});
+
+$('.toflip').waypoint(function(direction,event) {
+
+    console.log("Waypoint moved "+direction);
+    if (direction === "down") {
+        $(this).removeClass("animated fadeOutDown").addClass("animated fadeIn")
+    }if(direction ==='up')
+        $(this).removeClass("animated fadeInUp").addClass("animated fadeOutDown");
+
+}, {
+    offset: '100%'
 });
 
 
