@@ -73,15 +73,18 @@ $(document).ready(function() {
 
 //control the navbar fadein/out initial nav
 var previousScroll = 0,lastKnownScrollY=0 ,
-    headerOrgOffset = $('.navbar').height();
-var tolerance = 200;
+    headerOrgOffset = 600
+var tolerance = 500;
+var direction = '';
+var currentDiffrence = 0;
+
 
 $('.navbar').height($('.navbar').height());
 
 $(window).scroll(function () {
     var currentScroll = $(this).scrollTop();
-    console.log('this is currentScroll'+ currentScroll);
-    console.log('this is previous scrol'+ previousScroll);
+    //console.log('this is currentScroll'+ currentScroll);
+    //console.log('this is previous scrol'+ previousScroll);
     if($(this).scrollTop()==0) {
         $('.navbar').removeClass("navbar-harvest");
     }
@@ -93,17 +96,30 @@ $(window).scroll(function () {
 
 
 
-    if ($(this).scrollTop() > 600) {
-        if (currentScroll > headerOrgOffset) {
-            if (currentScroll > previousScroll) {
-                $('.navbar').slideUp(500);
-            } else {
+    if ($(this).scrollTop() >  headerOrgOffset) {
+        //FIND THE DIRECTION
+        if(previousScroll> currentScroll) {
+            if(direction === "down") currentDiffrence=0
+            direction = "up";
+            currentDiffrence+= currentScroll - previousScroll;
+            console.log(direction + currentDiffrence);
+         //   if(currentDiffrence > tolerance){
                 $('.navbar').slideDown(500);
-            }
-        } else {
-            $('.navbar').slideDown(500);
         }
+        else{
+            if(direction  === "up") currentDiffrence=0
+            direction = "down";
+            currentDiffrence+= currentScroll - previousScroll;
+            console.log(direction + currentDiffrence);
+          //  if(currentDiffrence > tolerance){
+           //     console.log("I AM HEREEE")
+                $('.navbar').slideUp(500);
+        }
+
+
+
         previousScroll = currentScroll;
+
     }
 
 });
