@@ -131,7 +131,7 @@ body {
 .navbar-harvest .navbar-nav > li > a {
     padding-top: 0px;
     padding-bottom: 0px;
-    line-height: 50px;
+    line-height: 30px;
     font-size:      1.5em;
 }
 
@@ -179,6 +179,10 @@ body {
 .history{
     padding-bottom: 200px;
     padding-top: 200px;
+}
+
+blockquote{
+    border-left-color: #f67d0f;
 }
 
 
@@ -300,3 +304,7 @@ a {
     color: #c0c0c0;
 }
 
+
+/*   Bootstrap 3.0 by default has a 15px padding on top and bottom, so we just need to override it!*/
+.navbar-nav > li > a {padding-top:10px !important; padding-bottom:10px !important;}
+.navbar {min-height:30px !important}
