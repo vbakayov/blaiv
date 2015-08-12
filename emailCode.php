@@ -19,7 +19,7 @@ echo "Invalid Sender's Email";
  else{
  $subject = 'ET Blaiv Sait Inquiry';
 
- $message = $_ZOST['msg'];
+ $message = $_POST['msg'];
 
  $headers = 'From:'. $email2 . "\r\n"; // Sender's Email
 
