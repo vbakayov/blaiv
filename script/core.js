@@ -56,6 +56,11 @@ $(document).ready(function() {
         return false;
     });
 
+
+    $(".toggleIt").hover( function () {
+        $(this).addClass("active"); },
+        function () { $(this).removeClass("active"); } );
+
     $(document).ready(function(){
         $("#start-project").click(function(){
 

@@ -1803,7 +1803,7 @@ main > article {
 
 
 .landing-get-started .banner {
-    padding-bottom: 6rem; }
+    padding-bottom: 0rem; }
 .landing-get-started .banner .gradient:before {
     opacity: .9; }
 .landing-get-started .banner figcaption {
@@ -2312,7 +2312,7 @@ h6, .zeta, .article .sidebar__meta .zeta {
         width: 100%;
         max-width: 63.625em;
         margin: 0 auto;
-        padding: 0 1.25em
+        padding: 60px 1.25em
     }
 
     .heading-font {

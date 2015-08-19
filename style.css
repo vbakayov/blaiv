@@ -180,11 +180,29 @@ body {
     padding-bottom: 200px;
     padding-top: 200px;
 }
-
-blockquote{
-    border-left-color: #f67d0f;
+.introduction{
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
+blockquote{
+    border-left: none;
+}
+
+
+h2.page-title {
+    font-family: "brandon_grotesquebold";
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent url("img/line.jpg") no-repeat scroll center bottom;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+    color: #666;
+}
 
 .navbar-inner {
     background:transparent;

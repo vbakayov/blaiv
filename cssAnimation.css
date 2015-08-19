@@ -15,8 +15,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px;
-    background: #2c3f52;
+    background: #1a4a72;
+
     color: #ed4e6e;
 }
 
@@ -24,6 +24,8 @@
     margin: 0;
     padding: 0;
     color: #fff;
+    text-align: left;
+    padding-left: 10px;
 }
 
 .grid figcaption span:before {
@@ -35,7 +37,8 @@
     padding: 5px 10px;
     border-radius: 2px;
     display: inline-block;
-    background: #ed4e6e;
+    background: #f36c00;
+
     color: #fff;
 }
 /* Caption Style 3 */
@@ -58,7 +61,7 @@
 }
 
 .cs-style-3 figcaption {
-    height: 70px;
+    height: 90px;
     width: 100%;
     top: auto;
     bottom: 0;

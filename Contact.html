@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
     <title></title>
@@ -21,11 +21,12 @@
         </figcaption>
     </figure>
     <div class="meta-wrap">
-        <h1>You need great interactive. <span class="large">We work with brilliant clients.</span></h1>
         <nav class="toggle-links">
 
-           <a  href="#myAnchor" rel="" id="anchor1"  class="start-project anchorLink">Shops</a>
-            <a href="#myAnchor2" class="get-in-touch active">Contact us </a>
+            <a   href="#myAnchor2" class=" toggleIt get-in-touch ">Свържете се с нас </a>
+            <a   href="#get-in-touch" class=" toggleIt get-in-touch ">Пишете ни </a>
+            <a   href="#myAnchor4" class=" toggleIt get-in-touch ">Магазин-Севлиево </a>
+            <a   href="#myAnchor" rel="" id="anchor1"  class="toggleIt start-project anchorLink">Магазини-София</a>
         </nav>
     </div>
 </header>
@@ -34,54 +35,20 @@
 
 
 
-<section style="display: block;" class="section-get-in-touch container-toggle" id="get-in-touch">
-    <div class="row">
-<form  method="post">
-    <input name="csrfmiddlewaretoken" value="72BU7vroBG1K0fXu5xfceR2IuBawnPzl" type="hidden">
-    <fieldset>
-            <ul class="layout">
-            <li class="half">
-                <input name="vname" required="required" placeholder="What's your mom call you?" type="text">
-
-            </li>
-            <li class="half">
-                <input name="vemail" required="required" placeholder="Where can we email you?" type="email">
-
-            </li>
-            <li class="full">
-
-                <textarea name="msg" rows="10" required="required" placeholder="What's on your mind?"></textarea>
-            </li>
-        </ul>
-    </fieldset>
-    <input name="formtype" value="contact" type="hidden">
-    <p class="success">Your message has been delivered. <br>We'll get back to you in a jiff.</p>
-    <button type="submit" name="submit" class="submit"><span>Send It</span></button>
-</form>
-    </div>
-</section>
-
     <section class="section section--grey text-center">
         <div name="myAnchor2" id="myAnchor2" class="wrapper">
             <header>
                 <h1 class="zeta uppercase heading-font seperator-bottom"><b>ИМАТА ВЪПРОС? ОБАДЕТЕ НИ СЕ</b></h1>
-                <h2 class="gamma heading-font"> <a href="tel://01794340979">  Севлиево:<b> 0898 553 225  ;   0675 3 48 70</b></a></h2>
-                <h2 class="gamma heading-font"> <a href="tel://01794340979"> София: <b>0898 333 019</b></a></h2>
+                <h2 class="gamma heading-font"> Севлиево: <a href="tel://0898 553 225">  <b> 0898 553 225  ;   0675 3 48 70</b></a></h2>
+                <h2 class="gamma heading-font">  София: <a href="tel://0898 333 019"> <b>0898 333 019</b></a></h2>
             </header>
             <a href="mailto:blaiv@abv.bg" class="btn btn--black" style="margin-top:30px;">blaiv@abv.bg</a>
         </div>
     </section>
 
-
-
-
-
-
-
-
     <section  class="contact-address">
 
-        <div name="myAnchor" id="myAnchor" class="grid__item contact-details text-center">
+        <div  id= "myAnchor4" class="grid__item contact-details text-center">
 					<span>
 						<header>
                             <h1 class="zeta uppercase heading-font seperator-bottom">БЛАЙВ ОФИС И МАГАЗИН</h1>
@@ -102,7 +69,7 @@
     </section>
 
     <section class="contact-address">
-        <div class="grid__item contact-details text-center">
+        <div  name="myAnchor" id="myAnchor" class="grid__item contact-details text-center">
 					<span>
 						<header>
                             <h1 class="zeta uppercase heading-font seperator-bottom"> МАГАЗИНИ</h1>
@@ -123,6 +90,35 @@
             <div style="position: relative; background-color: rgb(229, 227, 223); overflow: hidden;" id="mapContainer2">
                 <!-- Empty div  the map container  is filled by JavaScipt function at the end- may move to core.js latter -->
             </div>
+        </div>
+    </section>
+
+    <h1>You need great interactive. <span class="large">We work with brilliant clients.</span></h1>
+
+    <section style="display: block;" class="section-get-in-touch container-toggle" id="get-in-touch">
+        <div class="row">
+            <form  method="post">
+                <input name="csrfmiddlewaretoken" value="72BU7vroBG1K0fXu5xfceR2IuBawnPzl" type="hidden">
+                <fieldset>
+                    <ul class="layout">
+                        <li class="half">
+                            <input name="vname" required="required" placeholder="What's your mom call you?" type="text">
+
+                        </li>
+                        <li class="half">
+                            <input name="vemail" required="required" placeholder="Where can we email you?" type="email">
+
+                        </li>
+                        <li class="full">
+
+                            <textarea name="msg" rows="10" required="required" placeholder="What's on your mind?"></textarea>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input name="formtype" value="contact" type="hidden">
+                <p class="success">Your message has been delivered. <br>We'll get back to you in a jiff.</p>
+                <button type="submit" name="submit" class="submit"><span>Send It</span></button>
+            </form>
         </div>
     </section>
 
@@ -178,7 +174,7 @@
         var infoWindowContentSevlievo= [
 
             ['<div class="info_content">' +
-             '<h3>Blayv I Sinove</h3>' +
+             '<h3>Блайв</h3>' +
             '<p>Блайв <br>ул. Малин Попов 51<br> 5400 Севлиево</p>' +        '</div>']
         ];
 
