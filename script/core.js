@@ -84,24 +84,24 @@ var direction = '';
 var currentDiffrence = 0;
 
 $(function(){
-if($('body').is('.mainPage')) {
-    $('.navbar').height($('.navbar').height());
-
-    $(window).scroll(function () {
-        var currentScroll = $(this).scrollTop();
-        //console.log('this is currentScroll'+ currentScroll);
-        //console.log('this is previous scrol'+ previousScroll);
-        if ($(this).scrollTop() == 0) {
-            $('.navbar').removeClass("navbar-harvest").addClass("navbar-custom");
-            $('.navbar-brand').removeClass("visible").addClass("hidden");
-
-
-        }
-
-        if ($(this).scrollTop() > 1) {
-            $('.navbar').addClass("navbar-harvest").removeClass("navbar-custom");
-            $('.navbar-brand').removeClass("hidden").addClass("visible");
-        }
+//if($('body').is('.mainPage')) {
+//    $('.navbar').height($('.navbar').height());
+//
+//    $(window).scroll(function () {
+//        var currentScroll = $(this).scrollTop();
+//        //console.log('this is currentScroll'+ currentScroll);
+//        //console.log('this is previous scrol'+ previousScroll);
+//        if ($(this).scrollTop() == 0) {
+//            $('.navbar').removeClass("navbar-harvest").addClass("navbar-custom");
+//            $('.navbar-brand').removeClass("visible").addClass("hidden");
+//
+//
+//        }
+//
+//        if ($(this).scrollTop() > 1) {
+//            $('.navbar').addClass("navbar-harvest").removeClass("navbar-custom");
+//            $('.navbar-brand').removeClass("hidden").addClass("visible");
+//        }
 
 
         //if ($(this).scrollTop() > headerOrgOffset) {
