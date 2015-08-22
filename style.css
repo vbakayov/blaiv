@@ -14,6 +14,9 @@ body {
     height: 1500px;
 }
 
+.collapse.in {
+
+}
 .navbar-harvest .container-fluid {
     background: #f36c00;
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f68a28), color-stop(100%, #f36c00));
@@ -28,8 +31,8 @@ body {
 }
 .navbar-harvest .container-fluid .navbar-header .navbar-brand{
     color: #fff;
-    text-shadow: none;
-    padding-top: 2.2rem;
+    text-shadow: 2px 2px #B47900;
+    padding-top: 1.5rem;
     padding-bottom: 20px;
     font-weight: bold;
     font-size: 200%;
@@ -84,6 +87,7 @@ body {
 }
 .navbar-harvest .navbar-toggle {
     border-color: #f67d0f;
+    z-index: 10;
 }
 .navbar-harvest .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: #f67d0f;
@@ -180,6 +184,16 @@ body {
     padding-bottom: 200px;
     padding-top: 200px;
 }
+
+.padding{
+    padding-bottom: 15px;
+    padding-top: 80px;
+}
+
+.padding2{
+    padding-bottom: 15px;
+    padding-top: 100px;
+}
 .introduction{
     padding-bottom: 40px;
     padding-top: 40px;
@@ -272,6 +286,7 @@ a {
 .navbar-custom .navbar-collapse,
 .navbar-custom .navbar-form {
 
+
 }
 .navbar-custom .navbar-nav > .dropdown > a:hover .caret,
 .navbar-custom .navbar-nav > .dropdown > a:focus .caret {
@@ -315,6 +330,9 @@ a {
         background-color: transparent;
     }
 }
+
+
+
 .navbar-custom .navbar-link {
     color: #ffffff;
 }

@@ -83,50 +83,54 @@ var tolerance = 500;
 var direction = '';
 var currentDiffrence = 0;
 
+$(function(){
+if($('body').is('.mainPage')) {
+    $('.navbar').height($('.navbar').height());
 
-$('.navbar').height($('.navbar').height());
+    $(window).scroll(function () {
+        var currentScroll = $(this).scrollTop();
+        //console.log('this is currentScroll'+ currentScroll);
+        //console.log('this is previous scrol'+ previousScroll);
+        if ($(this).scrollTop() == 0) {
+            $('.navbar').removeClass("navbar-harvest").addClass("navbar-custom");
+            $('.navbar-brand').removeClass("visible").addClass("hidden");
 
-$(window).scroll(function () {
-    var currentScroll = $(this).scrollTop();
-    //console.log('this is currentScroll'+ currentScroll);
-    //console.log('this is previous scrol'+ previousScroll);
-    if($(this).scrollTop()==0) {
-        $('.navbar').removeClass("navbar-harvest");
-    }
 
-    if($(this).scrollTop()>1){
-            $('.navbar').addClass("navbar-harvest");
+        }
+
+        if ($(this).scrollTop() > 1) {
+            $('.navbar').addClass("navbar-harvest").removeClass("navbar-custom");
+            $('.navbar-brand').removeClass("hidden").addClass("visible");
         }
 
 
+        //if ($(this).scrollTop() > headerOrgOffset) {
+        //    //FIND THE DIRECTION
+        //    if (previousScroll > currentScroll) {
+        //        if (direction === "down") currentDiffrence = 0
+        //        direction = "up";
+        //        currentDiffrence += currentScroll - previousScroll;
+        //        console.log(direction + currentDiffrence);
+        //        //   if(currentDiffrence > tolerance){
+        //        $('.navbar').slideDown(500);
+        //    }
+        //    else {
+        //        if (direction === "up") currentDiffrence = 0
+        //        direction = "down";
+        //        currentDiffrence += currentScroll - previousScroll;
+        //        console.log(direction + currentDiffrence);
+        //        //  if(currentDiffrence > tolerance){
+        //        //     console.log("I AM HEREEE")
+        //        $('.navbar').slideUp(500);
+        //    }
+        //
+        //
+        //    previousScroll = currentScroll;
+        //
+        //}
 
-
-    if ($(this).scrollTop() >  headerOrgOffset) {
-        //FIND THE DIRECTION
-        if(previousScroll> currentScroll) {
-            if(direction === "down") currentDiffrence=0
-            direction = "up";
-            currentDiffrence+= currentScroll - previousScroll;
-            console.log(direction + currentDiffrence);
-         //   if(currentDiffrence > tolerance){
-                $('.navbar').slideDown(500);
-        }
-        else{
-            if(direction  === "up") currentDiffrence=0
-            direction = "down";
-            currentDiffrence+= currentScroll - previousScroll;
-            console.log(direction + currentDiffrence);
-          //  if(currentDiffrence > tolerance){
-           //     console.log("I AM HEREEE")
-                $('.navbar').slideUp(500);
-        }
-
-
-
-        previousScroll = currentScroll;
-
-    }
-
+    });
+}
 });
 
 $('.toflip').waypoint(function(direction,event) {
