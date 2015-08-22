@@ -90,11 +90,11 @@
                     <!-- normal -->
                     <div class="ih-item circle effect1"><a href="#">
                         <div class="spinner"></div>
-                        <div class="img"><img src="img/traditionalCovers/thumbnail1.jpg" alt="img"></div>
+                        <div class="img"><img src="img/yarn/thumbnail1.jpg" alt="img"></div>
                         <div class="info">
                             <div class="info-back">
-                                <h3>ую̀т</h3>
-                                <p>за всеки дом</p>
+                                <!--<h3>ую̀т</h3>-->
+                                <!--<p>за всеки дом</p>-->
                             </div>
                         </div></a></div>
                     <!-- end normal -->
@@ -106,11 +106,11 @@
                     <!-- colored -->
                     <div class="ih-item circle colored effect1"><a href="#">
                         <div class="spinner"></div>
-                        <div class="img"><img src="img/traditionalCovers/thumbnail2.jpg" alt="img"></div>
+                        <div class="img"><img src="img/yarn/thumbnail2.jpg" alt="img"></div>
                         <div class="info">
                             <div class="info-back">
-                                <h3>Яркост</h3>
-                                <p>изтънчен, нежен цвят</p>
+                                <!--<h3>Яркост</h3>-->
+                                <!--<p>изтънчен, нежен цвят</p>-->
                             </div>
                         </div></a></div>
                     <!-- end colored -->
@@ -125,42 +125,44 @@
 
 
 <ul class="grid cs-style-3">
-
+    <div class="container">
     <div class="padding col-sm-12 col--12 col-lg-12 grid-item">
         <h2 class="page-title">Естествена и цветна прежда</h2>
 
     </div>
 
-    <div class="col-sm-6 col-md-4 col-lg-4 grid-item top-buffer ">
-        <div style="opacity: 100;" class="ih-item square effect3 bottom_to_top">
+    <div class="col-sm-6 col-md-6 col-lg-6 grid-item top-buffer ">
+        <div style="opacity: 100;  position: relative;border: 8px solid #fff; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);" class="effect3 bottom_to_top">
             <figure>
-                <img src="img/traditionalCovers/red/1.jpg" alt="img03" class="img-responsive wp-post-image"  >
+                <img src="img/yarn/est1-thumbnail.jpg" alt="img03" class="img-responsive wp-post-image"  >
                 <figcaption>
                     <h3>Естествена прежда</h3>
                     <!-- <span>Jacob Cummings</span> -->
-                    <a href="javascript:;" id="model31">Виж Повече</a>
+                    <a href="javascript:;" id="model1">Виж Повече</a>
                 </figcaption>
             </figure>
 
         </div>
     </div>
 
-    <div class="col-sm-6 col-md-4 col-lg-4 grid-item top-buffer ">
-        <div style="opacity: 100;" class="ih-item square effect3 bottom_to_top">
+    <div class="col-sm-6 col-md-6 col-lg-6 grid-item top-buffer ">
+        <div style="opacity: 100;  position: relative;border: 8px solid #fff; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);" class=" effect3 bottom_to_top">
 
             <figure>
-                <img src="img/traditionalCovers/redKare/1-thumbnail.jpg" alt="img03" class="img-responsive wp-post-image"  >
+                <img src="img/yarn/tsv1-thumbnail.jpg" alt="img03" class="img-responsive wp-post-image"  >
                 <figcaption>
                     <h3>Цветна прежда</h3>
                     <!-- <span>Jacob Cummings</span> -->
-                    <a href="javascript:;" id="model32">Виж Повече</a>
+                    <a href="javascript:;" id="model2">Виж Повече</a>
                 </figcaption>
             </figure>
 
         </div>
     </div>
 
-   </ul>
+
+</div>
+</ul>
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
@@ -254,13 +256,13 @@
 
 
 
-    document.getElementById('model31').onclick =function(){
+    document.getElementById('model1').onclick =function(){
         // build items array
         var items = [
-            {src: 'img/traditionalCovers/red/1.jpg', w: 640, h: 480},
-            {src: 'img/traditionalCovers/red/2.jpg', w: 640, h: 480},
-            {src: 'img/traditionalCovers/red/3.jpg', w: 480, h: 640},
-            {src: 'img/traditionalCovers/red/4.jpg', w: 480, h: 640}
+            {src: 'img/yarn/est1.jpg',  w: 1200, h:1600},
+            {src: 'img/yarn/est2.jpg',  w: 1200, h:1600},
+            {src: 'img/yarn/est3.jpg',  w: 1200, h:1600},
+            {src: 'img/yarn/est4.jpg',  w: 1200, h:1600}
 
 
         ];
@@ -268,68 +270,16 @@
     };
 
 
-    document.getElementById('model32').onclick =function(){
+    document.getElementById('model2').onclick =function(){
         var items = [
-            {src: 'img/traditionalCovers/redKare/1.jpg', w: 3648, h: 2736},
-            {src: 'img/traditionalCovers/redKare/2.jpg', w: 2736, h: 3648},
-            {src: 'img/traditionalCovers/redKare/3.jpg', w: 2736, h: 3648}
+            {src: 'img/yarn/tsv1.jpg', w: 1600, h: 1200},
+            {src: 'img/yarn/tsv2.jpg', w: 1200, h: 1600},
+            {src: 'img/yarn/tsv3.jpg', w: 1600, h: 1200},
+            {src: 'img/yarn/tsv4.jpg', w: 1600, h: 1200},
 
         ];
         openPhotoSwipe(items);
     };
-
-
-    document.getElementById('model33').onclick =function(){
-        var items = [
-            {src: 'img/traditionalCovers/bejava/1.jpg', w: 1600, h: 1200},
-            {src: 'img/traditionalCovers/bejava/2.jpg', w: 1600, h: 1200},
-            {src: 'img/traditionalCovers/bejava/3.jpg', w: 1200, h: 1600},
-            {src: 'img/traditionalCovers/bejava/3.jpg', w: 1400, h: 1867}
-
-        ];
-        openPhotoSwipe(items);
-    };
-
-
-    document.getElementById('model34').onclick =function(){
-        var items = [
-            {src: 'img/traditionalCovers/green/1.jpg', w: 640, h: 480},
-            {src: 'img/traditionalCovers/green/2.jpg', w: 480, h: 640},
-            {src: 'img/traditionalCovers/green/3.jpg', w: 640, h: 480},
-            {src: 'img/traditionalCovers/green/4.jpg', w: 640, h: 480}
-
-
-        ];
-        openPhotoSwipe(items);
-    };
-
-    document.getElementById('model35').onclick =function(){
-        var items = [
-            {src: 'img/traditionalCovers/white/1.jpg', w: 1600, h: 1200},
-            {src: 'img/traditionalCovers/white/2.jpg', w: 1200, h: 1600},
-            {src: 'img/traditionalCovers/white/3.jpg', w: 1600, h: 1200},
-            {src: 'img/traditionalCovers/white/4.jpg', w: 1600, h: 1200}
-
-
-        ];
-        openPhotoSwipe(items);
-    };
-
-    document.getElementById('model36').onclick =function(){
-        var items = [
-            {src: 'img/traditionalCovers/blue/1.jpg', w: 1600, h: 1200},
-            {src: 'img/traditionalCovers/blue/2.jpg', w: 1200, h: 1600},
-            {src: 'img/traditionalCovers/blue/3.jpg', w: 1200, h: 1600},
-            {src: 'img/traditionalCovers/blue/4.jpg', w: 1200, h: 1600}
-        ];
-        openPhotoSwipe(items);
-    };
-
-
-
-
-
-
 
 
 
