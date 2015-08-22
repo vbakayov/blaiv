@@ -83,7 +83,7 @@ var tolerance = 500;
 var direction = '';
 var currentDiffrence = 0;
 
-$(function(){
+//$(function(){
 //if($('body').is('.mainPage')) {
 //    $('.navbar').height($('.navbar').height());
 //
@@ -128,10 +128,10 @@ $(function(){
         //    previousScroll = currentScroll;
         //
         //}
-
-    });
-}
-});
+//
+//    });
+//}
+//});
 
 $('.toflip').waypoint(function(direction,event) {
 
