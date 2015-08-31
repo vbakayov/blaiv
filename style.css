@@ -218,6 +218,19 @@ h2.page-title {
     color: #666;
 }
 
+h2.page-title2 {
+    font-family: "brandon_grotesquebold";
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+    color: #666;
+}
+
 .navbar-inner {
     background:transparent;
 }

@@ -1039,12 +1039,12 @@ ul + .info-label {
 }
 @media only screen and (min-width: 40em) {
     #mapContainer {
-        height: 640px
+        height: 440px
     }
 }
 @media only screen and (min-width: 48em) {
     #mapContainer {
-        height: 768px
+        height: 568px
     }
 }
 @media only screen and (min-width: 60.5em) {
@@ -1073,13 +1073,13 @@ ul + .info-label {
     }
     @media only screen and (min-width: 40em) {
         #mapContainer2 {
-            height: 640px
+            height: 440px
         }
     }
     @media only screen and (min-width: 48em) {
         #mapContainer2 {
-            height: 768px
-        overflow: auto;
+            height: 568px
+
         }
     }
     @media only screen and (min-width: 60.5em) {
