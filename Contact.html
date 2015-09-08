@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title></title>
     <script type="text/javascript" src="script/jquery-2.0.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -87,7 +87,7 @@
 
     <section  class="contact-address">
 
-        <div  id= "myAnchor4" class="grid__item contact-details text-center" ">
+        <div  id= "myAnchor4" class="grid__item contact-details text-center" >
 					<span>
 						<header>
                             <h1 class="zeta uppercase heading-font seperator-bottom">БЛАЙВ ОФИС И МАГАЗИН</h1>
@@ -137,7 +137,7 @@
 
     <section style="display: block;" class="section-get-in-touch container-toggle" id="get-in-touch">
         <div class="row">
-            <form  method="post">
+            <form  action="php/sendMail.php" method="POST">
                 <input name="csrfmiddlewaretoken" value="72BU7vroBG1K0fXu5xfceR2IuBawnPzl" type="hidden">
                 <fieldset>
                     <ul class="layout">

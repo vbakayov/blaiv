@@ -33,20 +33,12 @@ $(document).ready(function() {
 
     $('form').submit(function() {
 
-
-
-        var formData = $(this).serialize(),
+        var
             $success = $(this).find('.success'),
             $submit = $(this).find('button[type=submit]');
 
         $submit.hide();
-
-       console.log  ("I ama hereee ");
-        $.post( '/get-started/', formData).done(function() {
-            $success.show();
-        });
-
-        return false;
+        $success.show();
     });
     //Scroll down to position
     $('a').click(function(){
