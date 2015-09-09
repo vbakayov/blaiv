@@ -17,7 +17,7 @@ body {
 .collapse.in {
 
 }
-.navbar-harvest .container-fluid {
+.navbar-harvest .container-fluid{
     background: #f36c00;
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f68a28), color-stop(100%, #f36c00));
     background: -webkit-linear-gradient(top, #f68a28,#f36c00);
@@ -470,6 +470,23 @@ a {
     background-position: center center;
 }
 
+.my-gallery {
+    width: 100%;
+    float: left;
+}
+.my-gallery img {
+    width: 100%;
+    height: auto;
+}
+.my-gallery figure {
+    display: block;
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 300px;
+}
+.my-gallery figcaption {
+    display: none;
+}
 
 
 

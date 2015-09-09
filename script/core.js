@@ -65,77 +65,85 @@ $(document).ready(function() {
     });
 
 
-});
-
-
-//control the navbar fadein/out initial nav
-var previousScroll = 0,lastKnownScrollY=0 ,
-    headerOrgOffset = 600
-var tolerance = 500;
-var direction = '';
-var currentDiffrence = 0;
+    //control the navbar fadein/out initial nav
+    var previousScroll = 0,lastKnownScrollY=0 ,
+        headerOrgOffset = 600
+    var tolerance = 500;
+    var direction = '';
+    var currentDiffrence = 0;
 
 //$(function(){
 //if($('body').is('.mainPage')) {
 //    $('.navbar').height($('.navbar').height());
 //
-//    $(window).scroll(function () {
+//    $(window).on('scroll',function() {
 //        var currentScroll = $(this).scrollTop();
-//        //console.log('this is currentScroll'+ currentScroll);
-//        //console.log('this is previous scrol'+ previousScroll);
+//
+//        var header = document.getElementById("header-container");
 //        if ($(this).scrollTop() == 0) {
-//            $('.navbar').removeClass("navbar-harvest").addClass("navbar-custom");
+//            //$('.navbar').removeClass("navbar-harvest").addClass("navbar-custom");
 //            $('.navbar-brand').removeClass("visible").addClass("hidden");
-//
+//            $("#header-container").removeClass("container-fluid-background");
 //
 //        }
 //
-//        if ($(this).scrollTop() > 1) {
-//            $('.navbar').addClass("navbar-harvest").removeClass("navbar-custom");
+//        if ($(this).scrollTop() != 1) {
+//            //$('.navbar').addClass("navbar-harvest").removeClass("navbar-custom");
 //            $('.navbar-brand').removeClass("hidden").addClass("visible");
+//            $('#header-container').addClass("container-fluid-background");
 //        }
 
 
-        //if ($(this).scrollTop() > headerOrgOffset) {
-        //    //FIND THE DIRECTION
-        //    if (previousScroll > currentScroll) {
-        //        if (direction === "down") currentDiffrence = 0
-        //        direction = "up";
-        //        currentDiffrence += currentScroll - previousScroll;
-        //        console.log(direction + currentDiffrence);
-        //        //   if(currentDiffrence > tolerance){
-        //        $('.navbar').slideDown(500);
-        //    }
-        //    else {
-        //        if (direction === "up") currentDiffrence = 0
-        //        direction = "down";
-        //        currentDiffrence += currentScroll - previousScroll;
-        //        console.log(direction + currentDiffrence);
-        //        //  if(currentDiffrence > tolerance){
-        //        //     console.log("I AM HEREEE")
-        //        $('.navbar').slideUp(500);
-        //    }
-        //
-        //
-        //    previousScroll = currentScroll;
-        //
-        //}
+    //if ($(this).scrollTop() > headerOrgOffset) {
+    //    //FIND THE DIRECTION
+    //    if (previousScroll > currentScroll) {
+    //        if (direction === "down") currentDiffrence = 0
+    //        direction = "up";
+    //        currentDiffrence += currentScroll - previousScroll;
+    //        console.log(direction + currentDiffrence);
+    //        //   if(currentDiffrence > tolerance){
+    //        $('.navbar').slideDown(500);
+    //    }
+    //    else {
+    //        if (direction === "up") currentDiffrence = 0
+    //        direction = "down";
+    //        currentDiffrence += currentScroll - previousScroll;
+    //        console.log(direction + currentDiffrence);
+    //        //  if(currentDiffrence > tolerance){
+    //        //     console.log("I AM HEREEE")
+    //        $('.navbar').slideUp(500);
+    //    }
+    //
+    //
+    //    previousScroll = currentScroll;
+    //
+    //}
 //
 //    });
 //}
 //});
 
-$('.toflip').waypoint(function(direction,event) {
 
-    console.log("Waypoint moved "+direction);
-    if (direction === "down") {
-        $(this).removeClass("animated fadeOutDown").addClass("animated fadeIn")
-    }if(direction ==='up')
-        $(this).removeClass("animated fadeInUp").addClass("animated fadeOutDown");
 
-}, {
-    offset: '100%'
+
+
+
 });
+
+
+
+
+//$('.toflip').waypoint(function(direction,event) {
+//
+//    console.log("Waypoint moved "+direction);
+//    if (direction === "down") {
+//        $(this).removeClass("animated fadeOutDown").addClass("animated fadeIn")
+//    }if(direction ==='up')
+//        $(this).removeClass("animated fadeInUp").addClass("animated fadeOutDown");
+//
+//}, {
+//    offset: '100%'
+//});
 
 
 
