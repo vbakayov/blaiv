@@ -550,4 +550,13 @@ a, a:visited {
     top: -10000px;
 }
 
+#mapContainer div {
+    max-width: none;
+}
+
+.noPadding{
+    padding-left: 0px;
+    padding-right: 0px
+}
+
 
