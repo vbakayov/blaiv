@@ -72,26 +72,34 @@ $(document).ready(function() {
     var direction = '';
     var currentDiffrence = 0;
 
-//$(function(){
-//if($('body').is('.mainPage')) {
-//    $('.navbar').height($('.navbar').height());
-//
-//    $(window).on('scroll',function() {
-//        var currentScroll = $(this).scrollTop();
-//
-//        var header = document.getElementById("header-container");
-//        if ($(this).scrollTop() == 0) {
-//            //$('.navbar').removeClass("navbar-harvest").addClass("navbar-custom");
-//            $('.navbar-brand').removeClass("visible").addClass("hidden");
-//            $("#header-container").removeClass("container-fluid-background");
-//
-//        }
-//
-//        if ($(this).scrollTop() != 1) {
-//            //$('.navbar').addClass("navbar-harvest").removeClass("navbar-custom");
-//            $('.navbar-brand').removeClass("hidden").addClass("visible");
-//            $('#header-container').addClass("container-fluid-background");
-//        }
+$(function(){
+if($('body').is('.mainPage')) {
+    $('.navbar').height($('.navbar').height());
+
+    $(window).on('scroll',function() {
+        var currentScroll = $(this).scrollTop();
+
+        var header = document.getElementById("header-container");
+        //if ($(this).scrollTop() == 0) {
+        //    //$('.navbar').removeClass("navbar-harvest").addClass("navbar-custom");
+        //    $('.navbar-brand').removeClass("visible").addClass("hidden");
+        //    $("#header-container").removeClass("container-fluid-background");
+        //
+        //}
+        //
+        //if ($(this).scrollTop() != 1) {
+        //    //$('.navbar').addClass("navbar-harvest").removeClass("navbar-custom");
+        //    $('.navbar-brand').removeClass("hidden").addClass("visible");
+        //    $('#header-container').addClass("container-fluid-background");
+        //}
+
+        if ($(this).scrollTop() > 200) {
+            $('.down-arrow').addClass("toflip animated fadeOutDown");
+        }
+
+        if ($(this).scrollTop() == 0) {
+            $('.down-arrow').removeClass("toflip animated fadeOutDown").addClass("toflip animated fadeInDown");
+        }
 
 
     //if ($(this).scrollTop() > headerOrgOffset) {
@@ -119,9 +127,9 @@ $(document).ready(function() {
     //
     //}
 //
-//    });
-//}
-//});
+    });
+}
+});
 
 
 
