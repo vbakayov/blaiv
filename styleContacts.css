@@ -825,6 +825,7 @@ ul + .info-label {
         padding: 2.5rem 1rem; } }
 .landing-get-started .toggle-links a.active {
     background: #f45d20;
+    opacity: 1;
     color: #fff; }
 .landing-get-started main .row2 {
     width: 100%;
