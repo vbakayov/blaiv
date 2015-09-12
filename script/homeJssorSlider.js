@@ -66,6 +66,7 @@ jQuery(document).ready(function ($) {
 
 
 
+
     function ScaleSlider() {
         var windowWidth = $(window).width();
 

@@ -250,7 +250,7 @@ h2.page-title2 {
 }
 
 a {
-    color: #b77c00;
+    color: #b77c00; !important;
     text-decoration: none;
     font-size: 1.4em;
 }
@@ -557,6 +557,13 @@ a, a:visited {
 .noPadding{
     padding-left: 0px;
     padding-right: 0px
+}
+.nounderline{text-decoration: none}
+
+a:hover, a.hover {
+    text-decoration: none;
+    color: #23527c;
+    opacity: 0.75;
 }
 
 
