@@ -585,6 +585,10 @@ a:hover, a.hover {
     height: 150px;
 }
 
+.addEmptySpaceSmall{
+    height: 80px;
+}
+
 .social i {
     width: 30px;
     height: 30px;
