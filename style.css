@@ -29,7 +29,7 @@ body {
 .navbar-harvest .container-fluid .nav {
     float: right;
 }
-.navbar-harvest .container-fluid .navbar-header .navbar-brand{
+.navbar-harvest .container-fluid  .navbar-brand{
     color: #fff;
     text-shadow: 2px 2px #B47900;
     padding-top: 1.5rem;
@@ -167,7 +167,7 @@ body {
     left: 0;
     text-align: center;
     margin: auto;
-    z-index: 0;
+
 }
 
 #header-wrap {
@@ -753,4 +753,6 @@ a:hover, a.hover {
     transition: opacity 0.5s ease 0s;
 }
 @media (min-width:1025px) { .down-arrow2{opacity: 1} }
+
+
 
