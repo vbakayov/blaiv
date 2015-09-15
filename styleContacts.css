@@ -754,11 +754,11 @@ ul + .info-label {
 
 .gradient.blue-medium:before {
     background: #2a77be;
-    background: -webkit-gradient(linear, left top, left bottom, from(#2a77be), to(#456c98));
-    background: -webkit-linear-gradient(top, #2a77be 0%, #456c98 100%);
-    background: linear-gradient(to bottom, #2a77be 0%, #456c98 100%); }
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF4700), to(#FFB266));
+    background: -webkit-linear-gradient(top, #FF4700 0%, #FFB266 100%);
+    background: linear-gradient(to bottom, #FF4700 0%, #FFB266 100%); }
 .gradient.blue-medium:after {
-    border-color: #456c98; }
+    border-color: #f60500; }
 
 
 

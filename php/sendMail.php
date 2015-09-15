@@ -1,9 +1,10 @@
-?<?php
+<?php
+
+
 
 
 
  function sendFormMail(){
-      header('Content-Type: text/html; charset=utf-8');
       require_once "PHPMailerAutoload.php";
       // Check if the "Sender's Email" input field is filled out
       $mail = new PHPMailer(); // create a new object
@@ -35,14 +36,15 @@
       $mail->AddAddress("blaiv@abv.bg"); //destination address
        if(!$mail->Send())
           {
-          return "Mailer Error: " . $mail->ErrorInfo;
+          return "Error in MailSend: " . $mail->ErrorInfo;
           }
           else
           {
-          return "Message has been sent";
+          return "The message was send successfully!";
           }
 }
 
+echo header('Content-type: text/plain; charset=utf-8');
 echo  sendFormMail();
 
 

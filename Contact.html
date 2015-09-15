@@ -2,6 +2,7 @@
 <html lang="bg">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
     <title>Контакти | БЛАЙВ </title>
     <script type="text/javascript" src="script/jquery-2.0.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -62,10 +63,10 @@
 <main role="main">
 <header class="banner">
     <figure>
-        <img src="http://mostlyserious.io/static/assets/images/banner/get-started.jpg" alt="Banner for approach landing page.">
+        <img src="img/contacts.jpg" alt="Banner for approach landing page.">
         <figcaption class="gradient blue-medium">
             <h2>Блайв</h2>
-            <p>Марин Попов №51 <br>гр.Севлиево 5400 <br> blaiv@abv.bg</p>
+            <p>ул. "Марин Попов" №51 <br>гр.Севлиево 5400 <br> blaiv@abv.bg</p>
         </figcaption>
     </figure>
     <div class="meta-wrap">
@@ -87,7 +88,7 @@
         <div name="myAnchor2" id="myAnchor2" class="wrapper">
             <header>
                 <h1 class="zeta uppercase heading-font seperator-bottom"><b>ИМАТА ВЪПРОС? ОБАДЕТЕ НИ СЕ</b></h1>
-                <h2 class="gamma heading-font"> Севлиево: <b><a href="tel:+359898553225">   0898 553 225  ; </a><a href="tel:+359898417598">   0898 417 598  ; </a><a href="tel:+35967534870">  0675 3 48 70</a></b></h2>
+                <h2 class="gamma heading-font"> Севлиево: <b><a href="tel:+359898553225">   0898 553 225  ; </a><a href="tel:+359898417598">   0898 417 598 </a><a href="tel:+35967534870"> <br> 0675 3 48 70</a></b></h2>
                 <h2 class="gamma heading-font">  София: <a href="tel://0899 896 019"> <b>0899 896 019</b></a></h2>
             </header>
             <a href="mailto:blaiv@abv.bg" class="btn btn--black" style="margin-top:30px;">blaiv@abv.bg</a>
@@ -149,7 +150,8 @@
 
     <section style="display: block;" class="section-get-in-touch container-toggle" id="get-in-touch">
         <div class="row2">
-            <form  action="php/sendMail.php" method="POST">
+            <!--action="php/sendMail.php"-->
+            <form  action="php/sendMail.php"  method="POST"  target="_blank">
                 <input name="csrfmiddlewaretoken" value="72BU7vroBG1K0fXu5xfceR2IuBawnPzl" type="hidden">
                 <fieldset>
                     <ul class="layout">
@@ -168,8 +170,8 @@
                     </ul>
                 </fieldset>
                 <input name="formtype" value="contact" type="hidden">
-                <p class="success">Your message has been delivered. <br>We'll get back to you in a jiff.</p>
-                <button type="submit" name="submit" class="submit"><span>Изпрати</span></button>
+                <p class="success">Съобщението се изпрати успешно </p>
+                <button type="submit" name="submit" id="submit" class="submit"><span>Изпрати</span></button>
             </form>
         </div>
         <div id="justspace" class="addEmptySpace"></div>

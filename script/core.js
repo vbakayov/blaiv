@@ -139,6 +139,19 @@ if($('div').is('.down-arrow')) {
 });
 
 
+//$('#submit').click(function()
+//{
+//    $.ajax({
+//        url: sendMail.php,
+//        type:'POST',
+//        data : $('#form').serialize(),
+//        success: function(msg)
+//        {
+//            alert('Email Sent');
+//        }
+//    });
+//});
+
 
 
 //$('.toflip').waypoint(function(direction,event) {
