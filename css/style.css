@@ -225,7 +225,7 @@ h2.page-title {
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
-    background: transparent url("img/line.jpg") no-repeat scroll center bottom;
+    background: transparent url("../img/line.jpg") no-repeat scroll center bottom;
     margin-top: 20px;
     margin-bottom: 30px;
     padding-bottom: 20px;
@@ -515,7 +515,7 @@ a, a:visited {
 }
 
 .down-arrow {
-    background: transparent url("img/down-arrow.png") no-repeat scroll center center / 26px auto;
+    background: transparent url("../img/down-arrow.png") no-repeat scroll center center / 26px auto;
     position: fixed;
     bottom: 35px;
     left: 0px;
@@ -700,7 +700,7 @@ a:hover, a.hover {
     left:50%;
     top:50%;
     margin:-20px 0px 0px -20px;
-    background:transparent url(img/cart.png) no-repeat 75% 55%;
+    background:transparent url(../img/cart.png) no-repeat 75% 55%;
     -webkit-transition:all 0.3s linear;
     -moz-transition:all 0.3s linear;
     -o-transition:all 0.3s linear;
@@ -726,7 +726,7 @@ a:hover, a.hover {
 }
 
 .down-arrow2 {
-    background: transparent url("img/down-arrow.png") no-repeat scroll center center / 26px auto;
+    background: transparent url("../img/down-arrow.png") no-repeat scroll center center / 26px auto;
     position: relative;
     top: 20px;
     left: 0px;
