@@ -5,7 +5,9 @@
 
 
  function sendFormMail(){
-      require_once "PHPMailerAutoload.php";
+
+      require_once('../../www/php/PHPMailerAutoload.php');
+
       // Check if the "Sender's Email" input field is filled out
       $mail = new PHPMailer(); // create a new object
       $mail->CharSet = 'UTF-8';
@@ -26,7 +28,7 @@
       $mail->Port = 465; // or 587
       $mail->IsHTML(true);
       $mail->Username = "blaivDummy@gmail.com";
-      $mail->Password = "garderob"; //sloji si parolata tuk
+      $mail->Password = "garderob"; //parola
       $mail->Sender= "blaivDummy@gmail.com";
 
       $mail->AddReplyTo( $email, $name);

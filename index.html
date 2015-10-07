@@ -5,6 +5,7 @@
     <title>Традиционното одеяло - БЛАЙВ </title>
     <meta name="keywords" content="производител, одеала, одеало, одеяло, одеяла, китеник, китеници, черга, черги, вълна, вълнени, вълнена, прежда, текстил, текстилни, пана, пано, спалня, спално, бельо, възглавница, възглавници, пух, легло, легла, завивки, завивка, България, Bulgaria, blankets, blanket, tufty, rugs, rug, wrap, wraps, wool, woolen, yarn, textile, wall, panel, panels, linen, pillows, pillow">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <meta property="og:image" content="http://i.imgur.com/RlBJ7XL.png"/>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -182,7 +183,7 @@
 
                 </div>
                 <div>
-                    <img u="image" src="img/frontPage/third_history2.jpg">
+                    <img u="image" src="img/frontPage/third_history2.JPG">
                     <div style="position: absolute; width: 680px; height: 120px; top: 165px; left: 340px; padding: 5px;
                     text-align: left; line-height: 60px; text-transform: uppercase; text-shadow: 2px 2px #000000; font-weight: bold;font-size: 40px;font-family: Courier New; letter-spacing: 3px;
                         color: #FFFFFF;">Битови покривки
@@ -292,7 +293,7 @@
             <section id="bottom-content" class="grey-bg gray-text">
                 <div class="container-fluid">
                     <div class="row">
-                        <div  class="col-lg-8 col-lg-offset-2 history toflip animated fadeOutDown">
+                        <div  class="col-lg-8 col-lg-offset-2 history toflip animated fadeIn">
                             <div id="down-arrow" class="down-arrow desktop-only active"><span class="displace">Scroll Down</span></div>
 
                             <blockquote style=" font-size: 2rem;"><p>
@@ -321,7 +322,7 @@
                 <section  class=" gray-text history">
                     <div class="container-fluid">
                         <div class="row">
-                            <div  class="col-lg-8 col-lg-offset-2 toflip animated fadeOutDown">
+                            <div  class="col-lg-8 col-lg-offset-2 toflip animated fadeIn">
 
                                 <blockquote style=" font-size: 2rem;">
                                     <p>
@@ -361,7 +362,7 @@
                 <section  class=" gray-text history">
                     <div class="container-fluid">
                         <div class="row">
-                            <div  class="col-lg-8 col-lg-offset-2 toflip animated fadeOutDown">
+                            <div  class="col-lg-8 col-lg-offset-2 toflip animated fadeIn">
 
                                 <blockquote style=" font-size: 2rem;"><p>
                                     С нашата продукция обзавеждаме хотели, ресторанти, здравни заведения,  <br>
@@ -400,10 +401,10 @@
 
                         </div>
 
-                            <div class="my-gallery toflip animated fadeOutDown" itemscope itemtype="http://schema.org/ImageGallery">
+                            <div class="my-gallery " itemscope itemtype="http://schema.org/ImageGallery">
                                 <div class="container-fluid">
                                 <div class="col-sm-4 col-md-4 col-lg-4" >
-                                <figure  class="center-block" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" >
+                                <figure  class="center-block toflip animated fadeIn" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" >
                                     <a  id= "model31" href="img/gramota.jpg" itemprop="contentUrl" data-size="471x659">
                                         <img src="img/gramota.jpg" itemprop="thumbnail" alt="Image description" />
                                     </a>
@@ -411,7 +412,7 @@
                                 </figure>
                                 </div>
                                 <div class="col-sm-4 col-md-4 col-lg-4" >
-                                <figure  class="center-block" itemprop="associatedMedia" itemscope  itemtype="http://schema.org/ImageObject">
+                                <figure  class="center-block toflip animated fadeIn" itemprop="associatedMedia" itemscope  itemtype="http://schema.org/ImageObject">
                                     <a href="img/lyw.jpg" itemprop="contentUrl" data-size="475x644">
                                         <img src="img/lyw.jpg" itemprop="thumbnail" alt="Image description" />
                                     </a>
@@ -419,7 +420,7 @@
                                 </figure>
                                     </div>
                                 <div class="col-sm-4 col-md-4 col-lg-4" >
-                                <figure  class = "center-block" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" >
+                                <figure  class = "center-block toflip animated fadeIn" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" >
                                     <a href="img/certificate.jpg" itemprop="contentUrl" data-size="1450x2048">
                                         <img src="img/certificate.jpg" itemprop="thumbnail" alt="Image description" />
                                     </a>
@@ -533,16 +534,26 @@
                     .addTo(controller);
         </script>
     <script>
-        $('.toflip').waypoint(function(direction,event) {
+        $(document).ready(function() {
 
-            console.log("Waypoint moved "+direction);
-            if (direction === "down") {
-                $(this).removeClass("animated fadeOutDown").addClass("animated fadeIn")
-            }if(direction ==='up')
-                $(this).removeClass("animated fadeInUp").addClass("animated fadeOutDown");
 
+            // do your stuff
+
+                $('.toflip').waypoint(function(direction,event) {
+                    if(window.matchMedia('(min-width: 700px)').matches) {
+
+                        console.log("Waypoint moved " + direction);
+                        if (direction === "down") {
+                            $(this).removeClass("animated fadeOutDown").addClass("animated fadeIn")
+                        }
+                        if (direction === 'up')
+                            $(this).removeClass("animated fadeIn").addClass("animated fadeOutDown");
+                    }
         }, {
             offset: '110%'
+        });
+
+
         });
     </script>
 <script type="text/javascript">
