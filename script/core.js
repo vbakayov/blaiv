@@ -4,7 +4,6 @@
 var fissa = 0;
 
 
-
 $(document).ready(function() {
     $(".filtri a").click(function() {
         $(".filtri a.current").removeClass("current");
@@ -47,6 +46,16 @@ $(document).ready(function() {
         }, 500);
         return false;
     });
+
+
+
+    $('#collapseButton').bind('click', function() {
+        if(!$("#collapseButton").hasClass("collapsed")) {
+            $("#navigation").css("height", "");
+        }else {
+            $("#navigation").css("height", "500");}
+        });
+
 
 
     $(".toggleIt").hover( function () {
