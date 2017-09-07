@@ -55,6 +55,13 @@ body {
     opacity: .9;
     font-weight: 600;
 }
+
+/*.language-selector .dropdown-menu > li{*/
+    /*border-bottom: 1px solid #ebebeb;*/
+    /*border-bottom-width: 1px;*/
+    /*border-bottom-style: solid;*/
+    /*border-bottom-color: rgb(235, 235, 235);*/
+/*}*/
 .navbar-harvest .container-fluid .nav li a:hover {
     background: #f60e00;
 
