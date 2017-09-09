@@ -1124,14 +1124,14 @@ ul + .info-label {
 
 .btn {
     display: block;
-    border: 2px solid #ff4c2e;
+    border: 2px solid #f60e00;
     background: transparent;
     padding: 1.25em 1.25em;
     margin: 0 auto;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    color: #ff4c2e;
+    color: #f60e00;
     font-weight: 700;
     font-family: sans-serif;
     line-height: 1;
@@ -1155,7 +1155,7 @@ ul + .info-label {
     height: 100%;
     top: 0;
     left: 0;
-    background: #ff4c2e
+    background: #f60e00
 }
 .btn:hover,
 .btn:active {

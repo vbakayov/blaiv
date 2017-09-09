@@ -26,6 +26,10 @@ body {
 .collapse.in {
 
 }
+
+.orange_color{
+    color: #f45d20;
+}
 .navbar-harvest .container-fluid{
     background: #f3250a;
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f64f0e), color-stop(100%, #f3250a));

@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" href="../css/styleContacts.css" media="screen">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="../script/core.js"></script>-
 
     <!-- Latest compiled and minified CSS -->
 
@@ -20,7 +21,7 @@
 <body class="landing-get-started viewport-normal">>
 <div id= "header-wrap">
     <div id="header" class="clear navbar-primary ">
-        <nav role="navigation" class=" navbar  navbar-fixed-top navbar-harvest navbar-inner  " >
+        <nav id="navigation" role="navigation" class=" navbar  navbar-fixed-top navbar-harvest navbar-inner  " >
             <div class="container-fluid" style="line-height: 0.3">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div  class="navbar-brand" style=" font-family: Courier New; letter-spacing: 3px;  " >Блайв</div>
@@ -32,7 +33,7 @@
                 </div>
                 <div class="navbar-header">
 
-                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <button id="collapseButton" type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -84,7 +85,8 @@
 <main role="main">
 <header class="banner">
     <figure>
-        <img src="../img/contacts.jpg" alt="Banner for approach landing page.">
+        <!--<img src="../img/frontPage/national.jpg" alt="Banner for approach landing page.">-->
+        <img u="image" src="../img/frontPage/national.jpg" border="0" style="width: 4400px; height: 867.09px; left: 0px;">
         <figcaption class="gradient blue-medium">
             <h2>Блайв</h2>
             <p>ул. "Марин Попов" №51 <br>гр.Севлиево 5400 <br> blaiv@abv.bg</p>
@@ -105,12 +107,18 @@
 
 
 
-    <section class="section section--grey text-center">
+    <section class="section grey-bg  text-center">
         <div name="myAnchor2" id="myAnchor2" class="wrapper">
             <header>
-                <h1 class="zeta uppercase heading-font seperator-bottom"><b>ИМАТЕ ВЪПРОС? ОБАДЕТЕ НИ СЕ</b></h1>
-                <h2 class="gamma heading-font"> Севлиево: <b><a href="tel:+359898553225">  +359898 553 225  ; </a><a href="tel:+359898417598">  +359898 417 598 </a><a href="tel:+35967534870"> <br>+359675 3 48 70</a></b></h2>
-                <h2 class="gamma heading-font">  София: <a href="tel://0899 896 019"> <b>+359899 896 019</b></a></h2>
+                <h1 class=" uppercase heading-font seperator-bottom"><b>ИМАТЕ ВЪПРОС ? ОБАДЕТЕ НИ СЕ !</b></h1>
+                <h1 class=" heading-font"> <b>Севлиево:
+                    <div style="margin-top: 10px;">
+                    <a  class="orange_color" href="tel:+359898553225">  +359898 553 225  ; </a>
+                    <a class="orange_color" href="tel:+359898417598">  +359898 417 598 ; </a>
+                    <a class="orange_color" href="tel:+35967534870"> +359675 3 48 70</a></div></b></h1>
+                <h1 class=" heading-font"><b>  София:
+                    <div style="margin-top: 10px;">
+                    <a  class="orange_color" href="tel://0899 896 019"> +359899 896 019</a></div></b> </h1>
             </header>
             <a href="mailto:blaiv@abv.bg" class="btn btn--black" style="margin-top:30px;">blaiv@abv.bg</a>
         </div>
@@ -118,7 +126,7 @@
 
     <section  class="">
         <div class="row">
-        <div  id= "myAnchor4" class=" contact-details text-center col-sm-6 col-md-6 col-lg-6 grid-item"  style="padding-right: 0px; padding-right: 0px" >
+        <div  id= "myAnchor4" class=" contact-details text-center col-sm-6 col-md-6 col-lg-6 grid-item"  style="background-color: white; padding-right: 0px; padding-right: 0px" >
 					<span>
 						<header>
                             <h1 class="zeta uppercase heading-font seperator-bottom">БЛАЙВ ОФИС И МАГАЗИН</h1>
@@ -146,7 +154,7 @@
                 <!-- Empty div  the map container  is filled by JavaScipt function at the end- may move to core.js latter -->
             </div>
         </div>
-        <div  name="myAnchor" id="myAnchor" class=" contact-details text-center col-sm-6 col-md-6 col-lg-6 grid-item"  >
+        <div  name="myAnchor" id="myAnchor" class=" contact-details text-center col-sm-6 col-md-6 col-lg-6 grid-item" style="background-color: white;"  >
 					<span>
 						<header>
                             <h1 class="zeta uppercase heading-font seperator-bottom"> МАГАЗИНИ</h1>
