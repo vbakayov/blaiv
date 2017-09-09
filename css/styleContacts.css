@@ -12,7 +12,7 @@ html {
     overflow-y: scroll;
     min-height: 100%;
     color: #000;
-    text-rendering: optimizeLegibility
+    text-rendering: optimizeLegibility;
     height: 100%;
 
 }
@@ -987,13 +987,13 @@ ul + .info-label {
 }
 @media only screen and (min-width: 60.5em) and (min-width: 90em) {
     .contact-details {
-        height: 720px
+        height: 720px;
     background: #1b1e1f;
     }
 }
 @media only screen and (min-width: 60.5em) and (min-width: 110em) {
     .contact-details {
-        height: 880px
+        height: 880px;
         background: #1b1e1f;
     }
 }
