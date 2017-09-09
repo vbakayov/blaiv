@@ -52,8 +52,14 @@ $(document).ready(function() {
     $('#collapseButton').bind('click', function() {
         if(!$("#collapseButton").hasClass("collapsed")) {
             $("#navigation").css("height", "");
+            $("#navigation").css("overflow", "hidden");
         }else {
-            $("#navigation").css("height", "500");}
+            $("#navigation").css("height", "200");
+            $("#navigation").css("overflow", "");
+
+
+        }
+
         });
 
 
