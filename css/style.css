@@ -12,14 +12,58 @@ body {
     position: relative;
     background: #FFFFFF;
     height: 1500px;
+    margin-top: -130px;
+}
+.menu-style{
+         background-color: rgba(0,0,0,0.5);
+}
+.menu-style .navbar-nav>li>a {
+    color: #feffff;
+    font-weight: bold;
+    font-size: 150%;
+    padding-top: 1.5rem;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px #787878;
+    margin-top: 5px;
+}
+.extra-padding .navbar-nav>li>a>img {
+    margin-top: 5px;
 }
 
+.brand_style{
+    font-family: Courier New;
+    letter-spacing: 3px; color: #feffff;
+    font-weight: bold;
+    font-size: 150%;
+    padding-top: 1.5rem;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px #787878;
+}
 .language-selector .dropdown-menu > li{
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(235, 235, 235);
 }
 
+/*.parent-element-to-video {*/
+    /*overflow: hidden;*/
+      /*position: relative; !* or absolute or fixed *!*/
+/*}*/
+
+#vid{
+
+    position: relative;
+    top: 0;
+    overflow: hidden;
+
+}
+
+.navbar-default{
+  background:transparent;
+  background-image:none;
+  border-color:transparent;
+  box-shadow:none;
+}
 .language-selector .dropdown-menu > li:last-child {
     border-bottom: 0;
 }

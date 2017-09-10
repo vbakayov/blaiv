@@ -29,8 +29,7 @@ $(document).ready(function() {
         }
         return false;
     });
-
-    $('form').submit(function() {
+    $('form').submit(function () {
 
         var
             $success = $(this).find('.success'),
@@ -40,9 +39,9 @@ $(document).ready(function() {
         $success.show();
     });
     //Scroll down to position
-    $('a').click(function(){
+    $('a').click(function () {
         $('html, body').animate({
-            scrollTop: $( $(this).attr('href') ).offset().top
+            scrollTop: $($(this).attr('href')).offset().top
         }, 500);
         return false;
     });
@@ -144,14 +143,17 @@ if($('div').is('.down-arrow')) {
 //
     });
 }
+
+});
+
+
+
+
+
+
 });
 
 
-
-
-
-
-});
 
 
 //$('#submit').click(function()
