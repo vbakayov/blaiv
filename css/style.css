@@ -6,6 +6,14 @@ body {
 
 }
 
+.background_image{
+    background-image: url('../img/dunavska_cherveno/4_new.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
 
 #content{
     width: 100%;
@@ -259,6 +267,10 @@ body {
     text-rendering: optimizelegibility;
 }
 
+
+
+
+
 .history{
     padding-bottom: 200px;
     padding-top: 200px;
@@ -297,6 +309,20 @@ h2.page-title {
     color: #666;
 }
 
+h2.page-title_white {
+    font-family: "brandon_grotesquebold";
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent url("../img/line.jpg") no-repeat scroll center bottom;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
 h2.page-title2 {
     font-family: "brandon_grotesquebold";
     font-weight: normal;
@@ -309,6 +335,20 @@ h2.page-title2 {
     letter-spacing: 3px;
     color: #666;
 }
+
+h2.page-title3{
+    font-family: "brandon_grotesquebold";
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+
 
 .navbar-inner {
     background:transparent;
@@ -817,6 +857,28 @@ a:hover, a.hover {
 /*@media (max-width: 900px) {  .my-gallery figure { margin:30px 30px 30px 220px;;}  }*/
 .my-gallery figcaption {
     display: none;
+}
+.white-text {
+
+    font-weight: 400;
+    line-height: 1.6;
+    color: #fdffff;
+    font-family: "proxima-nova-alt",Helvetica,Arial,sans-serif;
+    text-rendering: optimizelegibility;
+}
+
+
+.card {
+    /*background: #ff9800;*/
+    background-color: rgba(255, 152, 0, 0.6);
+    border-radius: 2px;
+    display: inline-block;
+
+    margin: 1rem;
+    position: relative;
+}
+.card-3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 
