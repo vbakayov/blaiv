@@ -15,6 +15,40 @@ body {
     width: 100%;
 }
 
+.background_image_kara{
+    background-image: url('../img/pamuchni_kare/2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*background-position: center;*/
+    /*height: 100%;*/
+    width: 100%;
+}
+
+.background_image_debeli{
+    background-image: url('../img/tsvetni_rodopski/1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /*height: 100%;*/
+    /*width: 100%;*/
+}
+
+
+.background_image_olekoteni{
+    background-image: url('../img/olekoteni/3_new.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /*height: 100%;*/
+    /*width: 100%;*/
+}
+@media (max-width: 767px) {
+    .background_image_olekoteni {
+        background-position: unset;
+    }
+}
+
+
 #content{
     width: 100%;
     position: relative;
@@ -881,5 +915,107 @@ a:hover, a.hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
+.center-me{
+    position: absolute;
+    width: 70%;
+    height: 40%;
+    top: 15%;
+    left: 15%;
+    padding: 5px;
+    /* text-align: left; */
+    /* line-height: 60px; */
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Courier New;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+}
 
+/*.blaiv_heading {*/
+    /*position: absolute;*/
+    /*height: 120px;*/
+    /*top: 100px;*/
+    /*left: 180px;*/
+    /*text-align: left;*/
+    /*line-height: 60px;*/
+    /*text-transform: uppercase;*/
+    /*font-weight: bold;*/
+    /*font-size: 8vw;*/
+    /*font-family: Vollkorn, serif;*/
+    /*letter-spacing: 3px;*/
+    /*color: rgb(255, 255, 255);*/
+    /*padding: 5px;}*/
 
+@media only screen and (max-width: 1024px){
+          .center-me {
+              top: 10%;
+          }
+}
+
+@media only screen and (max-width: 1024px) {
+    .blaiv_heading {
+        top: 40px;
+    }
+
+    .blaiv_heading {
+        position: absolute;
+        height: 120px;
+        top: 100px;
+        left: 180px;
+        text-align: left;
+        line-height: 60px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 8vw;
+        font-family: Vollkorn, serif;
+        letter-spacing: 3px;
+        color: rgb(255, 255, 255);
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+          .explore_button {
+              top: 40%;
+              left: 35%;
+          }
+
+          .explore_button {
+              text-align: center;
+              line-height: 60px;
+              text-transform: uppercase;
+              /*left: 23%;*/
+              bottom: 0px;
+              position: absolute;
+              font-weight: bold;
+              font-size: 1vw;
+              font-family: "Courier New";
+              letter-spacing: 3px;
+              color: rgb(255, 255, 255);
+          }
+
+}
+
+.font_size_small{
+    font-size: 20px;
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .main_small_heading {
+        top: 29%;
+    }
+
+    .main_small_heading {
+        position: absolute;
+        top: 180px;
+        left: 210px;
+        text-align: left;
+        line-height: 36px;
+        font-size: 2vw;
+        color: rgb(255, 255, 255);
+        padding: 5px;
+    }
+}
